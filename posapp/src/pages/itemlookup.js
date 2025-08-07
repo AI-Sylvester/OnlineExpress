@@ -51,7 +51,7 @@ const handleSearch = useCallback(async (scanned = null) => {
 
   setLoading(true);
   try {
-    const response = await axios.get(`http://192.168.1.24:5000/api/item/${code}`);
+    const response = await axios.get(`https://onlineexpress.onrender.com/api/item/${code}`);
 
     const newItem = { ...response.data, qty: 1 };
 
